@@ -7,17 +7,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Article preview component</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 
 <body>
   <main>
     <article class="article-component">
-      <img src="images/drawers.jpg" alt="drawers">
+      <img class="drawer-img" src="images/drawers.jpg" alt="drawers">
       <div class="article-text">
         <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
         <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
           got some simple tips to help you make any room feel complete.</p>
         <div class="michelle-wrapper">
+          <div class="share-overlay" id="share-overlay">
+            <p>Share</p>
+            <div class="social-icons">
+              <img src="images/icon-facebook.svg" alt="facebook-icon">
+              <img src="images/icon-twitter.svg" alt="twitter-icon">
+              <img src="images/icon-pinterest.svg" alt="pinterest-icon">
+            </div>
+          </div>
+          <svg id="arrow-down" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z"
+              clip-rule="evenodd" />
+          </svg>
+
           <div class="michelle-container">
             <img src="images/avatar-michelle.jpg" alt="Michelle">
             <div class="michelle-text">
@@ -25,9 +41,11 @@
               <p>28 Jun 2020</p>
             </div>
           </div>
-          <div class="share-icon-background"><img class="share-icon" src="images/icon-share.svg" alt="share icon"
-              width="15"></div>
-
+          <div id="share-icon-background"><svg id="share-icon" xmlns="http://www.w3.org/2000/svg" width="15"
+              height="13">
+              <path fill=currentColor
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+            </svg></div>
         </div>
       </div>
     </article>
