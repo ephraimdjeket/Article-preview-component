@@ -196,6 +196,7 @@ body {
 
   .drawer-img {
     width: 229px;
+
   }
   
   .article-component {
@@ -203,6 +204,7 @@ body {
     background-color: white;
     width: 608px;
     height: 346px;
+    border-radius: 8px 8px 8px 8px;
   }
 
   .article-text {
@@ -257,6 +259,7 @@ body {
 
   .drawer-img {
     width: 285px;
+    object-fit: cover;
   }
   
   .article-component {
