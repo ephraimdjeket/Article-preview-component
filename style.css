@@ -260,6 +260,7 @@ body {
   .drawer-img {
     width: 285px;
     object-fit: cover;
+    object-position: left;
   }
   
   .article-component {
